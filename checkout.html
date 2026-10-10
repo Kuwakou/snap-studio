@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Photography App">
+    <!-- Required meta tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout </title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- My CSS file link -->
+    <link rel="stylesheet" type="text/css" href="css/style.css"> 
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-xl navbar-light" style="background-color: white;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><h1 class="company_name">SnapStudio</h1></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarLight" aria-controls="navbarLight" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse show" id="navbarLight">
+                    <ul class="navbar-nav me-auto mb-2 mb-xl-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">ABOUT</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">PORTFORLIO</a>
+                            <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="vendor_gallery.html">VISIT SHOWCASE</a></li>
+                            <li><a class="dropdown-item" href="login.html">POST YOUR WORK</a></li>
+                            </ul>
+                        </li>                  
+                        <li class="nav-item">
+                            <a class="nav-link" href=" item_details.html">BOOK SESSION</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="event.html">EVENT</a>
+                        </li>  
+                    </ul>
+                    <!-- filter function -->
+                     <section class="filter-bar">
+                        <form action="#" class="d-flex justify-content-center">
+                            <select name="#" id="filterCategory" class="form-select w-auto">
+                                <option value="all">All Categories</option>
+                                <option value="portrait">Portrait</option>
+                                <option value="fashion">Fashion</option>
+                                <option value="wedding">Wedding</option>
+                                <option value="landscape">Landscape</option>
+                                <option value="nature">Nature</option>
+                                <option value="traditional">Traditional</option>
+                                <!-- add more if you need -->
+                            </select>
+
+                            <select name="#" id="filterLocation" class="form-select w-auto">
+                                <option value="all">All Location</option>
+                                <option value="brisbane">Brisbane</option>
+                                <option value="sydney">Sydney</option>
+                                <option value="melbourne">Melbourne</option>
+                                <option value="goldcoast">Gold Coast</option>
+                                <option value="online">Online</option>
+                                <!-- add more locations if you need -->
+                            </select>
+
+                            <select name="#" id="filterPrice" class="form-select w-auto">
+                                <option value="all">All Prices</option>
+                                <option value="low">- $200</option>
+                                <option value="mid">$200-$500</option>
+                                <option value="high">$500-$1000</option>
+                                <option value="premium">$1000+</option>                           
+                            </select>
+
+                            <button class="btn btn-outline-secondary" type="submit">Filter</button>
+                            <button class="btn btn-outline-secondary" type="submit" style="margin-right: 10px;">Reset</button>
+                        
+
+                        </form>
+
+
+                    </section>                    
+
+                </div>
+            </div>
+        </nav>
+
+                <div class="search-bar-header">
+                    <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-secondary" type="submit">Search</button>
+                    </form>
+                </div>
+                    
+        </header>
+
+    
+<br>
+
+    <main>
+        <!-- keep it center of the page -->
+        <h2 class="main_text">CHECKOUT DETAILS</h2>
+
+    <div class="checkout-container">
+
+        <!-- keep it left side of the page -->
+         <!-- personal info sections -->
+        <div class="checkout-left">
+            <form name="session_book"></form>
+                <form class="row g-3 needs-validation" novalidate="">
+                    <div class="col-md-4">
+                        <label for="validationCustom01" class="form-label">First name</label>
+                        <input type="text" class="form-control" id="validationCustom01" placeholder="First Name" required="">
+                        <div class="valid-feedback">
+                        Looks good!
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="validationCustom02" class="form-label">Last name</label>
+                        <input type="text" class="form-control" id="validationCustom02" placeholder="Last Name" required="">
+                        <div class="valid-feedback">
+                        Looks good!
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="validationCustom03" class="form-label">Email</label>
+                        <input type="text" class="form-control" id="validationCustom03" placeholder="Email" required="">
+                        <div class="valid-feedback">
+                        Looks good!
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <label for="validationCustom04" class="form-label">Phone</label>
+                        <input type="text" class="form-control" id="validationCustom04" required="">
+                        <div class="valid-feedback">
+                        Looks good!
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-4">
+                        <label for="validationCompanyName" class="form-label">Company Name (optional)</label>
+                        <div class="input-group has-validation">
+                        <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" placeholder="Optional">
+                        <!-- <div class="invalid-feedback">
+                            
+                        </div> -->
+                        </div>
+
+                    
+                    </div>
+                    <div class="col-md-3">
+                        <label for="validationCustom05" class="form-label">Country</label>
+                        <select class="form-select" id="validationCustom05" required="">
+                        <option selected="" disabled="" value="">Select</option>
+                        <option>--</option>
+                        <option>Australia (AU)</option>
+                        <!-- add more if you need -->
+                        </select>
+                        <div class="invalid-feedback">
+                        Please select a valid country.
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-md-6">
+                        <label for="validationCustom06" class="form-label">Street address</label>
+                        <input type="text" class="form-control" id="validationCustom06" required="">
+                        <div class="invalid-feedback">
+                        Please provide a valid address.
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-md-6">
+                        <label for="validationCustom07" class="form-label">City</label>
+                        <input type="text" class="form-control" id="validationCustom07" required="">
+                        <div class="invalid-feedback">
+                        Please provide a valid city.
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="validationCustom04" class="form-label">State</label>
+                        <select class="form-select" id="validationCustom05" required="">
+                        <option selected="" disabled="" value="">Choose...</option>
+                        <option>--</option>
+                        <option>New South Wales (NSW)</option>
+                        <option>Victoria (VIC)</option>
+                        <option>Queensland (QLD)</option>
+                        <option>South Australia (SA)</option>
+                        <option>Weatern Australia (WA)</option>
+                        <option>Tasmania (TAS)</option>
+                        <option>Northern Territory (NT)</option>
+                        <option>Australian Capital Territory (ACT)</option>
+                        </select>
+                        <div class="invalid-feedback">
+                        Please select a valid state.
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="validationCustom05" class="form-label">Zip</label>
+                        <input type="text" class="form-control" id="validationCustom06" required="">
+                        <div class="invalid-feedback">
+                        Please provide a valid zip.
+                        </div>
+                    </div>
+                    
+            </form>
+        <br>
+
+        <!-- card info sections -->
+            <form class="row g-3 needs-validation" novalidate="">
+                    <div class="col-md-4">
+                        <label for="validationCustom01" class="form-label">Cardholder Name</label>
+                        <input type="text" class="form-control" id="cardholder-name" name="cardholder_name" required="">
+                        <div class="valid-feedback">
+                        Looks good!
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="validationCustom02" class="form-label">Card Number</label>
+                        <input type="text" class="form-control" id="card_number" name="card_number" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" placeholder="" required="">
+                        <div class="valid-feedback">
+                        Looks good!
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="validationCustom03" class="form-label">Expiration Date (MM/YY)</label>
+                        <input type="text" class="form-control" id="expiry-date" name="expiry_date" pattern="(0[1-9]|1[0-2])\/([0-9]{2})" placeholder="MM/YY" required="">
+                        <div class="valid-feedback">
+                        Looks good!
+                        </div>
+                    </div><br><br>
+
+                    <div class="col-md-4">
+                        <label for="validationCustom04" class="form-label">Security Code (CVV)</label>
+                        <input type="text" class="form-control" id="cvv" name="cvv" pattern="[0-9]{3,4}" required="">
+                        <div class="valid-feedback">
+                        Looks good!
+                        </div>
+                    </div> 
+            </form>
+
+            <br>
+
+                    <div class="col-12">
+                        <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required="">
+                        <label class="form-check-label" for="invalidCheck">
+                            Agree to terms and conditions
+                        </label>
+                        <div class="invalid-feedback">
+                            You must agree before submitting.
+                        </div>
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <div class="col-12">
+                        
+                        <a href="item_details.html" class="btn btn-secondary" type="cancel">Cancel</a>
+                        
+                        <button class="btn btn-secondary" type="confirm">Confirm</button>
+                    </div>
+                    </form>
+                <br><br>
+
+
+
+        </div>
+            
+            <!-- keet it right side of the page -->
+            <div class="checkout-right">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                        <th scope="col"></th>
+                        <th scope="col">Selected Photographer</th>
+                        <th scope="col">Date and Time</th>
+                        <th scope="col">Price</th>
+                        <th scope="col"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <th scope="row">1</th>
+                            <td>Kenzo Tsuruta</td>
+                            <td>11:00am-1:00pm, <br> 25 January 2025</td>
+                            <td>$1000</td>
+                            <td><button class="btn btn-secondary" type="remove">Remove</button> <button class="btn btn-secondary" type="edit">Edit</button></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Charlie Wilson</td>
+                            <td>12:00pm-3:00pm, <br> 20 March 2025</td>
+                            <td>$800</td>
+                            <td><button class="btn btn-secondary" type="remove">Remove</button>  <button class="btn btn-secondary" type="edit">Edit</button></td>
+
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Eric Lee</td>
+                            <td>1:00pm-2:00pm, <br> 11 June 2025</td>
+                            <td>$800</td>
+                            <td><button class="btn btn-secondary" type="remove">Remove</button>  <button class="btn btn-secondary" type="edit">Edit</button></td>
+                        </tr>
+                        <th scope="row">4</th>
+                            <td>David Smith</td>
+                            <td>11:00am-1:00pm, <br> 12 September 2025</td>
+                            <td>$900</td>
+                            <td><button class="btn btn-secondary" type="remove">Remove</button> <button class="btn btn-secondary" type="edit">Edit</button></td>
+                        </tr>
+                        <th scope="row">5</th>
+                            <td>Olivia Hansen</td>
+                            <td>10:00am-11:00am, <br> 25 July 2025</td>
+                            <td>$900</td>
+                            <td><button class="btn btn-secondary" type="remove">Remove</button> <button class="btn btn-secondary" type="edit">Edit</button></td>
+                        </tr>
+                        <h3 class="text-decoration-underline">Total price: $4,400 </h3><br><br>
+                    
+                        
+                    </tbody>
+                    </table>
+            </div>
+
+    </div>
+
+    <br>
+    
+    </main>
+
+
+    <br>
+
+ <footer class="footer"> <br>
+
+         <div class="footer-text">
+            <p>-Capture your momets with the perfect photograher- anytime, anywhere-</p>
+        </div>
+        
+         <div class="footer-text">
+            <p>-We believe that photograhers deserve a platform that highlights their talent and connects with them with real clients-</p>
+        </div>
+
+        <figure class="footer-map">
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d226315.1313995176!2d152.89520456517135!3d-27.58813682063711!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b915a104c721d41%3A0xaeb9c00d1ef00171!2sQUT%20Gardens%20Point%20Campus!5e0!3m2!1sen!2sau!4v1755362660096!5m2!1sen!2sau" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            <figcaption class="footer-mapinfo">
+                
+
+                <div class="footer-maplogo">
+                    SnapStudio
+                </div>
+                <address class="footer-mapaddress">
+                    2 George St, Brisbane City QLD 4000 <br>
+                    <a href="https://www.google.com/maps/place/QUT+Gardens+Point+Campus/@-27.4778241,153.024911,16z/data=!3m1!4b1!4m6!3m5!1s0x6b915a104c721d41:0xaeb9c00d1ef00171!8m2!3d-27.4778241!4d153.0274859!16zL20vMDFjNTdu?entry=ttu&g_ep=EgoyMDI1MDcyNy4wIKXMDSoASAFQAw%3D%3D" target="_blank">Google Map</a>
+
+                </address>
+            </figcaption>
+
+        </figure>
+
+
+
+
+
+        <hr class="footer-line">
+        <small class="footer-copy">SnapStudio</small>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>
